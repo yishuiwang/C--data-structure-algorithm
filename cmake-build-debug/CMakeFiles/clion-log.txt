@@ -1,0 +1,4 @@
+D:\Clion\CLion_2021.1.2_Protable\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Project_C++\data struct && algorithm"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Project_C++/data struct && algorithm/cmake-build-debug
