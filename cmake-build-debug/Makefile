@@ -154,6 +154,46 @@ algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
+#=============================================================================
+# Target rules for targets named Knapsack
+
+# Build rule for target.
+Knapsack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Knapsack
+.PHONY : Knapsack
+
+# fast build rule for target.
+Knapsack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/build
+.PHONY : Knapsack/fast
+
+Knapsack/Knapsack.obj: Knapsack/Knapsack.cpp.obj
+
+.PHONY : Knapsack/Knapsack.obj
+
+# target to build an object file
+Knapsack/Knapsack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/Knapsack/Knapsack.cpp.obj
+.PHONY : Knapsack/Knapsack.cpp.obj
+
+Knapsack/Knapsack.i: Knapsack/Knapsack.cpp.i
+
+.PHONY : Knapsack/Knapsack.i
+
+# target to preprocess a source file
+Knapsack/Knapsack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/Knapsack/Knapsack.cpp.i
+.PHONY : Knapsack/Knapsack.cpp.i
+
+Knapsack/Knapsack.s: Knapsack/Knapsack.cpp.s
+
+.PHONY : Knapsack/Knapsack.s
+
+# target to generate assembly for a file
+Knapsack/Knapsack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/Knapsack/Knapsack.cpp.s
+.PHONY : Knapsack/Knapsack.cpp.s
+
 championship/championship.obj: championship/championship.cpp.obj
 
 .PHONY : championship/championship.obj
@@ -216,8 +256,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Knapsack
 	@echo ... algorithm
 	@echo ... data_struct____algorithm
+	@echo ... Knapsack/Knapsack.obj
+	@echo ... Knapsack/Knapsack.i
+	@echo ... Knapsack/Knapsack.s
 	@echo ... championship/championship.obj
 	@echo ... championship/championship.i
 	@echo ... championship/championship.s

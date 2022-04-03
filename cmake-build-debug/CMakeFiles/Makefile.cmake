@@ -53,4 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/data_struct____algorithm.dir/DependInfo.cmake"
   "CMakeFiles/algorithm.dir/DependInfo.cmake"
+  "CMakeFiles/Knapsack.dir/DependInfo.cmake"
   )
