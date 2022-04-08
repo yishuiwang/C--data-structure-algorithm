@@ -155,6 +155,19 @@ algorithm/fast:
 .PHONY : algorithm/fast
 
 #=============================================================================
+# Target rules for targets named Graph
+
+# Build rule for target.
+Graph: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Graph
+.PHONY : Graph
+
+# fast build rule for target.
+Graph/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/build
+.PHONY : Graph/fast
+
+#=============================================================================
 # Target rules for targets named Knapsack
 
 # Build rule for target.
@@ -166,6 +179,33 @@ Knapsack: cmake_check_build_system
 Knapsack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/build
 .PHONY : Knapsack/fast
+
+Graph/Matrix.obj: Graph/Matrix.cpp.obj
+
+.PHONY : Graph/Matrix.obj
+
+# target to build an object file
+Graph/Matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/Graph/Matrix.cpp.obj
+.PHONY : Graph/Matrix.cpp.obj
+
+Graph/Matrix.i: Graph/Matrix.cpp.i
+
+.PHONY : Graph/Matrix.i
+
+# target to preprocess a source file
+Graph/Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/Graph/Matrix.cpp.i
+.PHONY : Graph/Matrix.cpp.i
+
+Graph/Matrix.s: Graph/Matrix.cpp.s
+
+.PHONY : Graph/Matrix.s
+
+# target to generate assembly for a file
+Graph/Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/Graph/Matrix.cpp.s
+.PHONY : Graph/Matrix.cpp.s
 
 Knapsack/Knapsack.obj: Knapsack/Knapsack.cpp.obj
 
@@ -256,9 +296,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Graph
 	@echo ... Knapsack
 	@echo ... algorithm
 	@echo ... data_struct____algorithm
+	@echo ... Graph/Matrix.obj
+	@echo ... Graph/Matrix.i
+	@echo ... Graph/Matrix.s
 	@echo ... Knapsack/Knapsack.obj
 	@echo ... Knapsack/Knapsack.i
 	@echo ... Knapsack/Knapsack.s

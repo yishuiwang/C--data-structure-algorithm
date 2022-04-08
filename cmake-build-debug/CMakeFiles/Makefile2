@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = "D:\Project_C++\data struct && algorithm\cmake-build-debug"
 # The main recursive "all" target.
 all: CMakeFiles/data_struct____algorithm.dir/all
 all: CMakeFiles/algorithm.dir/all
+all: CMakeFiles/Graph.dir/all
 all: CMakeFiles/Knapsack.dir/all
 
 .PHONY : all
@@ -85,6 +86,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/data_struct____algorithm.dir/clean
 clean: CMakeFiles/algorithm.dir/clean
+clean: CMakeFiles/Graph.dir/clean
 clean: CMakeFiles/Knapsack.dir/clean
 
 .PHONY : clean
@@ -96,7 +98,7 @@ clean: CMakeFiles/Knapsack.dir/clean
 CMakeFiles/data_struct____algorithm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\data_struct____algorithm.dir\build.make CMakeFiles/data_struct____algorithm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\data_struct____algorithm.dir\build.make CMakeFiles/data_struct____algorithm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target data_struct____algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target data_struct____algorithm"
 .PHONY : CMakeFiles/data_struct____algorithm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -123,7 +125,7 @@ CMakeFiles/data_struct____algorithm.dir/clean:
 CMakeFiles/algorithm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=3,4 "Built target algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target algorithm"
 .PHONY : CMakeFiles/algorithm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -144,13 +146,40 @@ CMakeFiles/algorithm.dir/clean:
 .PHONY : CMakeFiles/algorithm.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/Graph.dir
+
+# All Build rule for target.
+CMakeFiles/Graph.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Graph"
+.PHONY : CMakeFiles/Graph.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Graph.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Graph.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/Graph.dir/rule
+
+# Convenience name for target.
+Graph: CMakeFiles/Graph.dir/rule
+
+.PHONY : Graph
+
+# clean rule for target.
+CMakeFiles/Graph.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/clean
+.PHONY : CMakeFiles/Graph.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Knapsack.dir
 
 # All Build rule for target.
 CMakeFiles/Knapsack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Knapsack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=3,4 "Built target Knapsack"
 .PHONY : CMakeFiles/Knapsack.dir/all
 
 # Build rule for subdir invocation for target.
