@@ -180,6 +180,46 @@ Knapsack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/build
 .PHONY : Knapsack/fast
 
+#=============================================================================
+# Target rules for targets named Classification
+
+# Build rule for target.
+Classification: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Classification
+.PHONY : Classification
+
+# fast build rule for target.
+Classification/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/build
+.PHONY : Classification/fast
+
+Classification/KNN.obj: Classification/KNN.cpp.obj
+
+.PHONY : Classification/KNN.obj
+
+# target to build an object file
+Classification/KNN.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/Classification/KNN.cpp.obj
+.PHONY : Classification/KNN.cpp.obj
+
+Classification/KNN.i: Classification/KNN.cpp.i
+
+.PHONY : Classification/KNN.i
+
+# target to preprocess a source file
+Classification/KNN.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/Classification/KNN.cpp.i
+.PHONY : Classification/KNN.cpp.i
+
+Classification/KNN.s: Classification/KNN.cpp.s
+
+.PHONY : Classification/KNN.s
+
+# target to generate assembly for a file
+Classification/KNN.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/Classification/KNN.cpp.s
+.PHONY : Classification/KNN.cpp.s
+
 Graph/Matrix.obj: Graph/Matrix.cpp.obj
 
 .PHONY : Graph/Matrix.obj
@@ -296,10 +336,14 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Classification
 	@echo ... Graph
 	@echo ... Knapsack
 	@echo ... algorithm
 	@echo ... data_struct____algorithm
+	@echo ... Classification/KNN.obj
+	@echo ... Classification/KNN.i
+	@echo ... Classification/KNN.s
 	@echo ... Graph/Matrix.obj
 	@echo ... Graph/Matrix.i
 	@echo ... Graph/Matrix.s

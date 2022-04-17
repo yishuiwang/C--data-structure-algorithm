@@ -75,6 +75,7 @@ all: CMakeFiles/data_struct____algorithm.dir/all
 all: CMakeFiles/algorithm.dir/all
 all: CMakeFiles/Graph.dir/all
 all: CMakeFiles/Knapsack.dir/all
+all: CMakeFiles/Classification.dir/all
 
 .PHONY : all
 
@@ -88,6 +89,7 @@ clean: CMakeFiles/data_struct____algorithm.dir/clean
 clean: CMakeFiles/algorithm.dir/clean
 clean: CMakeFiles/Graph.dir/clean
 clean: CMakeFiles/Knapsack.dir/clean
+clean: CMakeFiles/Classification.dir/clean
 
 .PHONY : clean
 
@@ -98,7 +100,7 @@ clean: CMakeFiles/Knapsack.dir/clean
 CMakeFiles/data_struct____algorithm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\data_struct____algorithm.dir\build.make CMakeFiles/data_struct____algorithm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\data_struct____algorithm.dir\build.make CMakeFiles/data_struct____algorithm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target data_struct____algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=9,10 "Built target data_struct____algorithm"
 .PHONY : CMakeFiles/data_struct____algorithm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -125,7 +127,7 @@ CMakeFiles/data_struct____algorithm.dir/clean:
 CMakeFiles/algorithm.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target algorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=7,8 "Built target algorithm"
 .PHONY : CMakeFiles/algorithm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -152,7 +154,7 @@ CMakeFiles/algorithm.dir/clean:
 CMakeFiles/Graph.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Graph.dir\build.make CMakeFiles/Graph.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=3,4 "Built target Graph"
 .PHONY : CMakeFiles/Graph.dir/all
 
 # Build rule for subdir invocation for target.
@@ -179,7 +181,7 @@ CMakeFiles/Graph.dir/clean:
 CMakeFiles/Knapsack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=3,4 "Built target Knapsack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target Knapsack"
 .PHONY : CMakeFiles/Knapsack.dir/all
 
 # Build rule for subdir invocation for target.
@@ -198,6 +200,33 @@ Knapsack: CMakeFiles/Knapsack.dir/rule
 CMakeFiles/Knapsack.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/clean
 .PHONY : CMakeFiles/Knapsack.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Classification.dir
+
+# All Build rule for target.
+CMakeFiles/Classification.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Classification"
+.PHONY : CMakeFiles/Classification.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Classification.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Classification.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Project_C++\data struct && algorithm\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/Classification.dir/rule
+
+# Convenience name for target.
+Classification: CMakeFiles/Classification.dir/rule
+
+.PHONY : Classification
+
+# clean rule for target.
+CMakeFiles/Classification.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Classification.dir\build.make CMakeFiles/Classification.dir/clean
+.PHONY : CMakeFiles/Classification.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -27,7 +27,6 @@ private:
 };
 
 void knapsack::Adjust() {
-    //开始调整
     for (int i = 0; i < num_of_object; i++) {
         for (int j = 1; j <= capacity; j++) {
             //默认不做调整
@@ -35,10 +34,13 @@ void knapsack::Adjust() {
                 note[i][j] = note[i - 1][j];
                 f[i][j] = f[i - 1][j];
             }
+            //当背包容量大于物品容量时开始调整
             if (j >= weight[i]) {
                 int temp = f[i][j];
+                //取其中较大值作为f[i][j]的值
                 f[i][j] = max(f[i][j], f[i][j - weight[i]] + value[i]);
                 if (temp != f[i][j]) {
+                    //更新标记函数
                     note[i][j] = i + 1;
                 }
             }
