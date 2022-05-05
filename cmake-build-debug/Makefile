@@ -181,6 +181,19 @@ Knapsack/fast:
 .PHONY : Knapsack/fast
 
 #=============================================================================
+# Target rules for targets named Sort
+
+# Build rule for target.
+Sort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sort
+.PHONY : Sort
+
+# fast build rule for target.
+Sort/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sort.dir\build.make CMakeFiles/Sort.dir/build
+.PHONY : Sort/fast
+
+#=============================================================================
 # Target rules for targets named Classification
 
 # Build rule for target.
@@ -274,6 +287,33 @@ Knapsack/Knapsack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Knapsack.dir\build.make CMakeFiles/Knapsack.dir/Knapsack/Knapsack.cpp.s
 .PHONY : Knapsack/Knapsack.cpp.s
 
+Sort/quick.obj: Sort/quick.cpp.obj
+
+.PHONY : Sort/quick.obj
+
+# target to build an object file
+Sort/quick.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sort.dir\build.make CMakeFiles/Sort.dir/Sort/quick.cpp.obj
+.PHONY : Sort/quick.cpp.obj
+
+Sort/quick.i: Sort/quick.cpp.i
+
+.PHONY : Sort/quick.i
+
+# target to preprocess a source file
+Sort/quick.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sort.dir\build.make CMakeFiles/Sort.dir/Sort/quick.cpp.i
+.PHONY : Sort/quick.cpp.i
+
+Sort/quick.s: Sort/quick.cpp.s
+
+.PHONY : Sort/quick.s
+
+# target to generate assembly for a file
+Sort/quick.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Sort.dir\build.make CMakeFiles/Sort.dir/Sort/quick.cpp.s
+.PHONY : Sort/quick.cpp.s
+
 championship/championship.obj: championship/championship.cpp.obj
 
 .PHONY : championship/championship.obj
@@ -339,6 +379,7 @@ help:
 	@echo ... Classification
 	@echo ... Graph
 	@echo ... Knapsack
+	@echo ... Sort
 	@echo ... algorithm
 	@echo ... data_struct____algorithm
 	@echo ... Classification/KNN.obj
@@ -350,6 +391,9 @@ help:
 	@echo ... Knapsack/Knapsack.obj
 	@echo ... Knapsack/Knapsack.i
 	@echo ... Knapsack/Knapsack.s
+	@echo ... Sort/quick.obj
+	@echo ... Sort/quick.i
+	@echo ... Sort/quick.s
 	@echo ... championship/championship.obj
 	@echo ... championship/championship.i
 	@echo ... championship/championship.s

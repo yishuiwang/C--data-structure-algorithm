@@ -55,5 +55,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/algorithm.dir/DependInfo.cmake"
   "CMakeFiles/Graph.dir/DependInfo.cmake"
   "CMakeFiles/Knapsack.dir/DependInfo.cmake"
+  "CMakeFiles/Sort.dir/DependInfo.cmake"
   "CMakeFiles/Classification.dir/DependInfo.cmake"
   )
