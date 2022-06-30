@@ -8,6 +8,7 @@ using namespace std;
 
 class knapsack {
 public:
+
     //~knapsack();
 
     void input();
@@ -56,19 +57,6 @@ void knapsack::Adjust() {
         w -= weight[n];
     }
 }
-
-
-//knapsack::~knapsack() {
-//    delete[] weight;
-//    delete[] value;
-//    delete[] Container;
-//    for (int i = 0; i <= num_of_object; ++i) {
-//        delete[] note[i];
-//        delete[] f[i];
-//    }
-//    delete[] f;
-//    delete[] note;
-//}
 
 void knapsack::input() {
     cin >> num_of_object;

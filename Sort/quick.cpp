@@ -51,7 +51,7 @@ int main() {
     int arr[6] = {23, 54, 12, 4, 5,6};
     int len = sizeof(arr) / sizeof(int);
     printArr(arr, len);
-    quickSort(arr,0,4);
+    quickSort(arr,0,5);
     printArr(arr, len);
     system("pause");
 }
