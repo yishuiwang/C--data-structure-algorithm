@@ -1,0 +1,9 @@
+# ninja log v5
+15	1099	6783815494427776	CMakeFiles/Sort.dir/Sort/quick.cpp.obj	b16f589ed142e7b4
+3	1119	6783815494740215	CMakeFiles/algorithm.dir/championship/championship.cpp.obj	51dd45768048a1d0
+8	1125	6783815494740215	CMakeFiles/Graph.dir/Graph/Matrix.cpp.obj	87cc9f35d35d5eb3
+11	1168	6783815495212869	CMakeFiles/Classification.dir/Classification/KNN.cpp.obj	718c5544695e2391
+13	1182	6783815495369128	CMakeFiles/back_tracking.dir/back_tracking/N-Queens.cpp.obj	e3816567ac163857
+1	1197	6783815495525343	CMakeFiles/Knapsack.dir/Knapsack/Knapsack.cpp.obj	b171edbca1f33217
+4	841	6783815750275491	CMakeFiles/data_struct____algorithm.dir/main.cpp.obj	8bb3e8c10b8fac04
+28	778	6783816369976898	CMakeFiles/back_tracking.dir/back_tracking/N-Queens.cpp.obj	e3816567ac163857
